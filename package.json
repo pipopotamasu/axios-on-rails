@@ -1,0 +1,32 @@
+{
+  "name": "axios-on-rails",
+  "version": "0.0.1",
+  "description": "axios for Ruby on Rails project",
+  "main": "index.js",
+  "scripts": {
+    "test": "write later"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipopotamasu/axios-on-rails.git"
+  },
+  "keywords": [
+    "axios",
+    "RoR",
+    "Ruby",
+    "on",
+    "Rails",
+    "rails",
+    "csrf"
+  ],
+  "author": "pipopotamasu <ec0156hx@gmail.com> (https://github.com/pipopotamasu)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pipopotamasu/axios-on-rails/issues"
+  },
+  "homepage": "https://github.com/pipopotamasu/axios-on-rails#readme",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "rails-ujs": "^5.1.4"
+  }
+}
