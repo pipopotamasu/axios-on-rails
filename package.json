@@ -27,6 +27,7 @@
   "homepage": "https://github.com/pipopotamasu/axios-on-rails#readme",
   "dependencies": {
     "axios": "^0.17.1",
+    "jest": "^22.1.4",
     "rails-ujs": "^5.1.4"
   }
 }
