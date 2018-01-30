@@ -4,7 +4,8 @@
   "description": "axios for Ruby on Rails project",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "node ./node_modules/parcel-bundler/bin/cli.js src/index.js"
   },
   "repository": {
     "type": "git",
