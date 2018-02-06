@@ -2,7 +2,7 @@
   "name": "axios-on-rails",
   "version": "0.0.1",
   "description": "axios for Ruby on Rails project",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build-dev": "node ./node_modules/parcel-bundler/bin/cli.js src/index.js",
     "build-prod": "node ./node_modules/parcel-bundler/bin/cli.js build --public-url dist/index.min.js src/index.js",
