@@ -4,7 +4,8 @@
   "description": "axios for Ruby on Rails project",
   "main": "index.js",
   "scripts": {
-    "build": "node ./node_modules/parcel-bundler/bin/cli.js src/index.js",
+    "build-dev": "node ./node_modules/parcel-bundler/bin/cli.js src/index.js",
+    "build-prod": "node ./node_modules/parcel-bundler/bin/cli.js build --public-url dist/index.min.js src/index.js",
     "lint": "eslint src/index.js"
   },
   "repository": {
