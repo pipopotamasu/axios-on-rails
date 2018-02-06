@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "node ./node_modules/parcel-bundler/bin/cli.js src/index.js"
+    "build": "node ./node_modules/parcel-bundler/bin/cli.js src/index.js",
+    "lint": "eslint src/index.js"
   },
   "repository": {
     "type": "git",
