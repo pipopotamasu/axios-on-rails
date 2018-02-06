@@ -2,9 +2,11 @@
   "name": "axios-on-rails",
   "version": "0.0.1",
   "description": "axios for Ruby on Rails project",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "write later"
+    "build-dev": "node ./node_modules/parcel-bundler/bin/cli.js src/index.js",
+    "build-prod": "node ./node_modules/parcel-bundler/bin/cli.js build --public-url dist/index.min.js src/index.js",
+    "lint": "eslint src/index.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,8 @@
   "homepage": "https://github.com/pipopotamasu/axios-on-rails#readme",
   "dependencies": {
     "axios": "^0.17.1",
+    "eslint": "^4.17.0",
+    "parcel-bundler": "^1.5.1",
     "rails-ujs": "^5.1.4"
   }
 }
