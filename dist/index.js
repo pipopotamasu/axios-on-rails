@@ -69,7 +69,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({7:[function(require,module,exports) {
+})({8:[function(require,module,exports) {
 'use strict';
 
 module.exports = function bind(fn, thisArg) {
@@ -410,7 +410,7 @@ module.exports = {
   trim: trim
 };
 
-},{"./helpers/bind":7,"is-buffer":29}],15:[function(require,module,exports) {
+},{"./helpers/bind":8,"is-buffer":29}],15:[function(require,module,exports) {
 'use strict';
 
 var utils = require('../utils');
@@ -447,7 +447,7 @@ module.exports = function enhanceError(error, config, code, request, response) {
   return error;
 };
 
-},{}],22:[function(require,module,exports) {
+},{}],21:[function(require,module,exports) {
 'use strict';
 
 var enhanceError = require('./enhanceError');
@@ -495,7 +495,7 @@ module.exports = function settle(resolve, reject, response) {
   }
 };
 
-},{"./createError":22}],19:[function(require,module,exports) {
+},{"./createError":21}],20:[function(require,module,exports) {
 'use strict';
 
 var utils = require('./../utils');
@@ -565,7 +565,7 @@ module.exports = function buildURL(url, params, paramsSerializer) {
   return url;
 };
 
-},{"./../utils":5}],20:[function(require,module,exports) {
+},{"./../utils":5}],19:[function(require,module,exports) {
 'use strict';
 
 var utils = require('./../utils');
@@ -620,7 +620,7 @@ module.exports = function parseHeaders(headers) {
   return parsed;
 };
 
-},{"./../utils":5}],21:[function(require,module,exports) {
+},{"./../utils":5}],22:[function(require,module,exports) {
 'use strict';
 
 var utils = require('./../utils');
@@ -958,7 +958,7 @@ module.exports = function xhrAdapter(config) {
     request.send(requestData);
   });
 };
-},{"./../utils":5,"./../core/settle":18,"./../helpers/buildURL":19,"./../helpers/parseHeaders":20,"./../helpers/isURLSameOrigin":21,"../core/createError":22,"./../helpers/btoa":23,"./../helpers/cookies":24}],13:[function(require,module,exports) {
+},{"./../utils":5,"./../core/settle":18,"./../helpers/buildURL":20,"./../helpers/parseHeaders":19,"./../helpers/isURLSameOrigin":22,"../core/createError":21,"./../helpers/btoa":23,"./../helpers/cookies":24}],13:[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {};
@@ -1443,7 +1443,7 @@ module.exports = function dispatchRequest(config) {
   });
 };
 
-},{"./../utils":5,"./transformData":25,"../cancel/isCancel":11,"../defaults":6,"./../helpers/isAbsoluteURL":26,"./../helpers/combineURLs":27}],8:[function(require,module,exports) {
+},{"./../utils":5,"./transformData":25,"../cancel/isCancel":11,"../defaults":6,"./../helpers/isAbsoluteURL":26,"./../helpers/combineURLs":27}],7:[function(require,module,exports) {
 'use strict';
 
 var defaults = require('./../defaults');
@@ -1687,9 +1687,9 @@ module.exports = axios;
 // Allow use of default import syntax in TypeScript
 module.exports.default = axios;
 
-},{"./utils":5,"./helpers/bind":7,"./core/Axios":8,"./defaults":6,"./cancel/Cancel":9,"./cancel/CancelToken":10,"./cancel/isCancel":11,"./helpers/spread":12}],2:[function(require,module,exports) {
+},{"./utils":5,"./helpers/bind":8,"./core/Axios":7,"./defaults":6,"./cancel/Cancel":9,"./cancel/CancelToken":10,"./cancel/isCancel":11,"./helpers/spread":12}],3:[function(require,module,exports) {
 module.exports = require('./lib/axios');
-},{"./lib/axios":4}],3:[function(require,module,exports) {
+},{"./lib/axios":4}],2:[function(require,module,exports) {
 /*
 Unobtrusive JavaScript
 https://github.com/rails/rails/blob/master/actionview/app/assets/javascripts
@@ -2394,7 +2394,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 _axios2.default.defaults.headers.common['X-CSRF-Token'] = (0, _railsUjs.csrfToken)();
 
 exports.default = _axios2.default;
-},{"axios":2,"rails-ujs":3}],30:[function(require,module,exports) {
+},{"axios":3,"rails-ujs":2}],30:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -2414,7 +2414,7 @@ module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
-  var ws = new WebSocket('ws://' + hostname + ':' + '57366' + '/');
+  var ws = new WebSocket('ws://' + hostname + ':' + '63226' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
