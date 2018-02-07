@@ -1,7 +1,7 @@
 {
   "name": "axios-on-rails",
   "version": "0.0.1",
-  "description": "axios for Ruby on Rails project",
+  "description": "This provide axios with csrf token for Ruby on Rails project",
   "main": "dist/index.js",
   "scripts": {
     "build-dev": "node ./node_modules/parcel-bundler/bin/cli.js src/index.js",
