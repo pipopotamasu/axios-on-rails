@@ -29,6 +29,7 @@
   "homepage": "https://github.com/pipopotamasu/axios-on-rails#readme",
   "dependencies": {
     "axios": "^0.17.1",
+    "babel-preset-env": "^1.6.1",
     "eslint": "^4.17.0",
     "parcel-bundler": "^1.5.1",
     "rails-ujs": "^5.1.4"
