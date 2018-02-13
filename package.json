@@ -4,8 +4,7 @@
   "description": "This provide axios with csrf token for Ruby on Rails project",
   "main": "dist/index.js",
   "scripts": {
-    "build-dev": "node ./node_modules/parcel-bundler/bin/cli.js src/index.js",
-    "build-prod": "node ./node_modules/parcel-bundler/bin/cli.js build --public-url dist/index.min.js src/index.js",
+    "build": "node ./node_modules/rollup/bin/rollup src/index.js -o dist/index.js -f cjs",
     "lint": "eslint src/index.js"
   },
   "repository": {
@@ -31,7 +30,7 @@
     "axios": "^0.17.1",
     "babel-preset-env": "^1.6.1",
     "eslint": "^4.17.0",
-    "parcel-bundler": "^1.5.1",
-    "rails-ujs": "^5.1.4"
+    "rails-ujs": "^5.1.4",
+    "rollup": "^0.55.5"
   }
 }
